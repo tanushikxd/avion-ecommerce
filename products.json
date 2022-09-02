@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "image": "https://avatars.mds.yandex.net/get-images-cbir/1666568/bHP_V3x0WpiWW5jo_sQx3w4982/ocr",
+    "title": "The Dandy Chair",
+    "price": 250,
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "height": "110cm",
+    "width": "75cm",
+    "depth": "50cm"
+  },
+  {
+    "id": 2,
+    "image": "https://avatars.mds.yandex.net/get-images-cbir/1044244/3Ub-UBp-g3SVdbE9VlcC3w3603/ocr",
+    "title": "Rustic Vase Set",
+    "price": 155,
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "height": "110cm",
+    "width": "75cm",
+    "depth": "50cm"
+  },
+  {
+    "id": 3,
+    "image": "https://avatars.mds.yandex.net/get-images-cbir/1571103/r3TYoWWMQnHkBRceZVX6gw3676/ocr",
+    "title": "The Silky Vase",
+    "price": 125,
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "height": "110cm",
+    "width": "75cm",
+    "depth": "50cm"
+  },
+  {
+    "id": 4,
+    "image": "https://avatars.mds.yandex.net/get-images-cbir/465873/dawx_mF8Xh364UgqU53xOw3717/ocr",
+    "title": "The Lucy Lamp",
+    "price": 399,
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "height": "110cm",
+    "width": "75cm",
+    "depth": "50cm"
+  },
+  {
+    "id": 5,
+    "image": "https://avatars.mds.yandex.net/get-images-cbir/1617422/VGpm4zKbSh6w96C3wlmhJw3830/ocr",
+    "title": "The Dandy chair",
+    "price": 250,
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "height": "110cm",
+    "width": "75cm",
+    "depth": "50cm"
+  },
+  {
+    "id": 6,
+    "image": "https://avatars.mds.yandex.net/get-images-cbir/2057692/DVGycCaBX_vKJI1KJnw-aA3862/ocr",
+    "title": "Rustic Vase Set",
+    "price": 155,
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "height": "110cm",
+    "width": "75cm",
+    "depth": "50cm"
+  },
+  {
+    "id": 7,
+    "image": "https://avatars.mds.yandex.net/get-images-cbir/966989/I_-tks1c9l4ntaYRlvB_qQ3892/ocr",
+    "title": "The Silky Vase",
+    "price": 125,
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "height": "110cm",
+    "width": "75cm",
+    "depth": "50cm"
+  },
+  {
+    "id": 8,
+    "image": "https://avatars.mds.yandex.net/get-images-cbir/1650597/CvkLJXytGHe2miqqdZweaA3923/ocr",
+    "title": "The Lucy Lamp",
+    "price": 399,
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "height": "110cm",
+    "width": "75cm",
+    "depth": "50cm"
+  },
+  {
+    "id": 9,
+    "image": "https://avatars.mds.yandex.net/get-images-cbir/1041881/bHP_V3x0WpiWW5jo_sQx3w3975/ocr",
+    "title": "Rustic Vase Set",
+    "price": 155,
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "height": "110cm",
+    "width": "75cm",
+    "depth": "50cm"
+  },
+  {
+    "id": 10,
+    "image": "https://avatars.mds.yandex.net/get-images-cbir/1041881/3Ub-UBp-g3SVdbE9VlcC3w4010/ocr",
+    "title": "The Dandy chair",
+    "price": 250,
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "height": "110cm",
+    "width": "75cm",
+    "depth": "50cm"
+  },
+  {
+    "id": 11,
+    "image": "https://avatars.mds.yandex.net/get-images-cbir/1554079/r3TYoWWMQnHkBRceZVX6gw4045/ocr",
+    "title": "The Silky Vase",
+    "price": 125,
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "height": "110cm",
+    "width": "75cm",
+    "depth": "50cm"
+  },
+  {
+    "id": 12,
+    "image": "https://avatars.mds.yandex.net/get-images-cbir/1666094/dawx_mF8Xh364UgqU53xOw4071/ocr",
+    "title": "The Lucy Lamp",
+    "price": 399,
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "height": "110cm",
+    "width": "75cm",
+    "depth": "50cm"
+  }
+]
