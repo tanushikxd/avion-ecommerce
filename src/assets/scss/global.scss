@@ -52,6 +52,10 @@ body {
     line-height: 24px;
     cursor: pointer;
   }
+  button:hover  {
+    background-color: rgb(169, 168, 221);
+    color: white;
+  }
   h2{
     font-family: 'Clash Display' sans-serif;
     font-weight: 400;

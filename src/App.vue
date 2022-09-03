@@ -15,6 +15,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style ProductDetails lang="scss">
 @import "./assets/scss/global.scss";
 </style>

@@ -1,0 +1,18 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 80px;
+    &-us{
+        margin-bottom: 30px;
+    }
+    &-title{
+        margin-bottom: 20px;
+    }
+    &-title2{
+        margin-bottom: 15px;
+    }
+    &-text{
+        max-width: 955px;
+    }
+}

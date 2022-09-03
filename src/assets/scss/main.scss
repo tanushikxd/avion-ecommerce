@@ -1,80 +1,75 @@
 .hero {
-    background-image: url("../../assets/images/Hero\ Blocks.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    height: 704px;
-    margin-bottom: 80px;
-    &-container {
-      position: relative;
+  background-image: url("../../assets/images/Hero\ Blocks.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  height: 704px;
+  margin-bottom: 80px;
+  &-container {
+    position: relative;
+  }
+  &-wrapper {
+    width: 630px;
+    height: 444px;
+    background-color: white;
+    padding: 48px 60px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -40px;
+    top: 150px;
+  }
+  &-title {
+    font-size: 32px;
+    color: rgba(34, 32, 46, 1);
+    margin-bottom: 20px;
+    width: 513px;
+    text-align: left;
+  }
+  &-text {
+    margin-bottom: 157px;
+    text-align: left;
+    font-family: "Satoshi" sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgb(110, 103, 157);
+  }
+}
+
+.offers {
+  margin-bottom: 82px;
+  &-title {
+    margin-bottom: 36px;
+  }
+  &-wrapper {
+    // background-color: rgba(249, 249, 249, 1);
+    // width: 305px;
+    // height: 244px;
+    // display: flex;
+    // padding: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+  }
+  &-choice {
+    background-color: rgba(249, 249, 249, 1);
+    width: 305px;
+    height: 244px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 48px;
+    &_icon {
+      margin-bottom: 12px;
+      width: 24px;
+      height: 24px;
     }
-    &-wrapper {
-      width: 630px;
-      height: 444px;
-      background-color: white;
-      padding: 48px 60px;
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      right: -40px;
-      top: 150px;
-    }
-    &-title {
-      font-size: 32px;
-      color: rgba(34, 32, 46, 1);
-      margin-bottom: 20px;
-      width: 513px;
+    &_title {
+      margin-bottom: 12px;
       text-align: left;
     }
-    &-text {
-      margin-bottom: 157px;
+    &_text {
       text-align: left;
-      font-family: "Satoshi" sans-serif;
-      font-size: 18px;
-      line-height: 27px;
-      color: rgb(110, 103, 157);
-    }
-    &-btn:hover  {
-      background-color: rgb(183, 182, 241);
-      color: white;
     }
   }
-  
-  .offers {
-    margin-bottom: 82px;
-    &-title {
-      margin-bottom: 36px;
-    }
-    &-wrapper {
-      // background-color: rgba(249, 249, 249, 1);
-      // width: 305px;
-      // height: 244px;
-      // display: flex;
-      // padding: 48px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 22px;
-    }
-    &-choice {
-      background-color: rgba(249, 249, 249, 1);
-      width: 305px;
-      height: 244px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      padding: 48px;
-      &_icon {
-        margin-bottom: 12px;
-        width: 24px;
-        height: 24px;
-      }
-      &_title {
-        margin-bottom: 12px;
-        text-align: left;
-      }
-      &_text {
-        text-align: left;
-      }
-    }
-  }
-  
+}
