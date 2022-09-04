@@ -75,6 +75,11 @@
     background-color: rgba(42, 37, 75, 1);
     color: white;
   }
+  &-btn:hover,
+  &-btn:focus {
+    background-color: #4E4D93;
+    color: white;
+  }
 }
 .benefits-icons_text {
   position: relative;
