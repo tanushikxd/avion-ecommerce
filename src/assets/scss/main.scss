@@ -34,6 +34,9 @@
     line-height: 27px;
     color: rgb(110, 103, 157);
   }
+  &-btn{
+    transform: translateX(-100%);
+  }
 }
 
 .offers {
@@ -71,5 +74,32 @@
     &_text {
       text-align: left;
     }
+  }
+}
+
+.explains{
+  margin-top: 100px;
+  &-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  &-info{
+    padding: 64px 75px 0 64px;
+    text-align: left;
+    max-width: 634px;
+    background-color: rgba(42, 37, 75, 1);
+    color: white;
+  }
+  &-title{
+    margin-bottom: 12px;
+  }
+  &-text{
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 205px;
+  }
+  &-btn{
+    margin-bottom: 35px;
   }
 }

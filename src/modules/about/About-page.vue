@@ -1,20 +1,48 @@
 <template>
   <div class="about">
-    <h2 class="about-us">About us</h2>
-    <h3 class="about-title">The best supplier of catering equipment.</h3>
-    <h4 class="about-title2">Our purpose: Catering equipment made easy.</h4>
-    <p class="about-text">
-      Established in 1985 on the basic premise of low priced, high quality
-      catering equipment. Today EasyEquipment's products cover everything from
-      refrigeration to pastry, cooking machines to knives, and everything in
-      between. Our core lines offer the best value in Catering Equipment from
-      refrigeration to commercial kitchen sinks. At EasyEquipment, we understand
-      the pressures of a commercial kitchen and making your life easier is at
-      the heart of what we do. Our head office is based in Bolton and we ship
-      catering equipment every day across the UK and Ireland. We can even export
-      to over 100 countries including but not limited to France, Germany, Spain
-      and Switzerland and many more.
-    </p>
+    <h1 class="about-title">
+      A brand built on the love of craftmanship, quality and outstanding
+      customer service
+    </h1>
+    <div class="about-first">
+      <div class="about-first_wrapper">
+        <h3 class="about-first_title">
+          From a studio in London to a global brand with over 400 outlets
+        </h3>
+        <p class="about-first_text">
+          When we started Avion, the idea was simple. Make high quality
+          furniture affordable and available for the mass market. <br />
+          <br />Handmade, and lovingly crafted furniture and homeware is what we
+          live, breathe and design so our Chelsea boutique become the hotbed for
+          the London interior design community.
+        </p>
+      </div>
+      <img
+        src="../../assets/images/about1.jpg"
+        alt=""
+        class="about-first_img"
+      />
+    </div>
+    <div class="about-first">
+      <img
+        src="../../assets/images/about2.jpg"
+        alt=""
+        class="about-first_img"
+      />
+      <div class="about-first_wrapper">
+        <h3 class="about-first_title">
+          Our service isn’t just personal, it’s actually hyper personally
+          exquisite
+        </h3>
+        <p class="about-first_text">
+          When we started Avion, the idea was simple. Make high quality
+          furniture affordable and available for the mass market. <br />
+          <br />Handmade, and lovingly crafted furniture and homeware is what we
+          live, breathe and design so our Chelsea boutique become the hotbed for
+          the London interior design community.
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 

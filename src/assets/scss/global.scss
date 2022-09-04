@@ -1,77 +1,109 @@
-@import './vars.scss';
-*{
+@import "./vars.scss";
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-    @import url("https://api.fontshare.com/v2/css?f[]=satoshi@700,400&f[]=clash-display@400,500&display=swap");
-    font-family: "Satoshi", sans-serif;
-    font-family: "Clash Display", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    li {
-      list-style: none;
-    }
-    a {
-      text-decoration: none;
-    }
-    router-link{
-      cursor: pointer;
-    }
+  @import url("https://api.fontshare.com/v2/css?f[]=satoshi@700,400&f[]=clash-display@400,500&display=swap");
+  font-family: "Satoshi", sans-serif;
+  font-family: "Clash Display", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  li {
+    list-style: none;
   }
-  
-  nav {
-    padding: 30px;
-  
-    a {
-      font-weight: bold;
-      color: #2c3e50;
-  
-      &.router-link-exact-active {
-        color: #42b983;
-      }
-    }
+  a {
+    text-decoration: none;
   }
-  .container{
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  button{
-    display: inline-block;
-    background-color: rgba(249, 249, 249, 1);
-    border: 0;
-    height: 56px;
-    width: 170px;
-    padding: 16px 32px;
-    font-family: 'Satoshi' sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+  router-link {
     cursor: pointer;
+    animation: fadeIn 1s ease-in;
   }
-  button:hover  {
-    background-color: rgb(169, 168, 221);
-    color: white;
+  .moveInUp-enter-active{
+    animation: fadeIn 1s ease-in;
   }
-  h2{
-    font-family: 'Clash Display' sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
+  @keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100%{
+      opacity: 1;
+    }
   }
-  h3{
-    font-family: 'Clash Display' sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
-    color: rgba(42, 37, 75, 1);
+  .moveInUp-leave-active{
+    animation: moveInUp .3s ease-in;
   }
-  h4{
-    font-family: 'Clash Display' sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
+  @keyframes moveInUp{
+   0%{
+    transform: translateY(0);
+   }
+    100%{
+    transform: translateY(-400px);
+   }
   }
+}
+
+nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+button {
+  display: inline-block;
+  background-color: rgba(249, 249, 249, 1);
+  border: 0;
+  height: 56px;
+  width: 170px;
+  padding: 16px 32px;
+  font-family: "Satoshi" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(183, 182, 241);
+  color: white;
+}
+h1{
+  font-family: "Clash Display" sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-family: "Clash Display" sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+}
+h3 {
+  font-family: "Clash Display" sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: rgba(42, 37, 75, 1);
+}
+h4 {
+  font-family: "Clash Display" sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}

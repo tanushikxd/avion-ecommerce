@@ -19,6 +19,14 @@
     &_title {
       margin-bottom: 8px;
     }
+    &_btn {
+      background-color: transparent;
+      transform: translateX(85%);
+    }
+    &_btn:hover,
+    &_btn:focus {
+      color: rgb(237, 14, 14);
+    }
     &_price {
       font-family: "Satoshi" sans-serif;
       font-size: 18px;
@@ -82,17 +90,17 @@
       border: 0;
     }
   }
-  &-btn{
+  &-btn {
     background-color: rgba(42, 37, 75, 1);
     color: white;
     font-size: 16px;
-    &:hover{
+    &:hover {
       background-color: rgb(169, 168, 221);
       color: white;
     }
   }
 }
-.products-like_might{
+.products-like_might {
   text-align: left;
   padding-left: 70px;
   margin-bottom: 33px;

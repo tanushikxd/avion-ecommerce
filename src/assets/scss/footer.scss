@@ -1,0 +1,52 @@
+.footer{
+    background-color: rgba(42, 37, 75, 1);
+    margin-top: 84px;
+    padding: 58px 0 0 50px;
+    position: relative;
+    &-nav{
+        display: flex;
+        gap: 110px;
+        text-align: left;
+        letter-spacing: 1px;
+        
+    }
+    &-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        color: white;
+        font-size: 16px;
+    }
+    &-link{
+        color: white;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+.input{
+    position: absolute;
+    top: 80px;
+    right: 83px;
+    &-title{
+        color: white;
+        font-size: 16px;
+        margin-bottom: 16px;
+        text-align: left;
+    }
+    &-form{
+        width: 509px;
+        height: 56px;
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 17px 0 17px 32px;
+        color: white;
+    }
+    &-btn{
+        width: 118px;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(42, 37, 75, 1);
+        padding: 16px 25px;
+        border: 0;
+    }
+}

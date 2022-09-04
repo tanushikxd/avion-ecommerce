@@ -8,6 +8,9 @@ import About from "./modules/about/About-page.vue";
 import Products from "../src/modules/main/components/products/Products-component.vue";
 import Details from "./modules/main/components/products/Product-details.vue";
 import Admin from "./modules/admin/Admin-page.vue";
+import FooterMenu from "./modules/footer/Menu-page.vue";
+import FooterCategories from "./modules/footer/Categories-page.vue";
+import OurCompany from "./modules/footer/Our-page.vue";
 
 export default new VueRouter({
   mode: "history",
@@ -36,6 +39,21 @@ export default new VueRouter({
       path: "/admin-products",
       name: "admin-products",
       component: Admin,
+    },
+    {
+      path: "/footer-menu",
+      name: "footer-menu",
+      component: FooterMenu,
+    },
+    {
+      path: "/footer-categories",
+      name: "footer-categories",
+      component: FooterCategories,
+    },
+    {
+      path: "/our-company",
+      name: "our-company",
+      component: OurCompany,
     },
   ],
 });

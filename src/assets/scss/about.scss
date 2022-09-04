@@ -1,18 +1,19 @@
-.about{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 80px;
-    &-us{
-        margin-bottom: 30px;
-    }
+.about {
     &-title{
-        margin-bottom: 20px;
+        margin-bottom: 79px;
+        padding: 0 369px 0 369px;
     }
-    &-title2{
-        margin-bottom: 15px;
+  &-first {
+    display: flex;
+    text-align: left;
+    &_wrapper{
+        padding: 72px 100px 0 84px;
     }
-    &-text{
-        max-width: 955px;
+    &_title{
+        margin-bottom: 25px;
     }
+    &_img{
+        width: 710px;
+    }
+  }
 }

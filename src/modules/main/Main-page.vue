@@ -3,11 +3,16 @@
     <section class="hero">
       <div class="container hero-container">
         <div class="hero-wrapper">
-          <h2 class="hero-title">
-            Luxury homeware for people who love timeless design quality
-          </h2>
-          <p class="hero-text">Shop the new Spring 2022 collection today</p>
-          <button class="hero-btn">View collection</button>
+          <router-link to="/products">
+            <h2 class="hero-title">
+              Luxury homeware for people who love timeless design quality
+            </h2>
+            <p class="hero-text">Shop the new Spring 2022 collection today</p>
+
+            <button @click="goToProducts()" class="hero-btn">
+              View collection
+            </button>
+          </router-link>
         </div>
       </div>
     </section>
@@ -64,14 +69,54 @@
       </div>
     </section>
     <products-component></products-component>
+    <section class="explains">
+      <div class="container explains-container">
+        <div class="explains-info">
+          <h2 class="explains-title">It started with a small idea</h2>
+          <p class="explains-text">
+            A global brand with local beginnings, our story begain in a small
+            studio in South London in early 2014
+          </p>
+          <button class="explains-btn">View collection</button>
+        </div>
+        <div class="explains-info_pic">
+          <img
+            src="../../assets/images/explains.jpg"
+            alt=""
+            class="explains-info_img"
+          />
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
 <script>
 import ProductsComponent from "./components/products/Products-component.vue";
 export default {
+  data() {
+    return {
+      products: "",
+    };
+  },
+  created() {
+    fetch("http://localhost:3000/products")
+      .then((res) => res.json())
+      .then((json) => {
+        this.products = json;
+      });
+  },
   components: {
     ProductsComponent,
+  },
+  methods: {
+    goToProducts() {
+      fetch("http://localhost:3000/products")
+        .then((res) => res.json())
+        .then((json) => {
+          this.products = json;
+        });
+    },
   },
 };
 </script>
