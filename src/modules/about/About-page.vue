@@ -43,11 +43,21 @@
         </p>
       </div>
     </div>
+    <static-page></static-page>
+    <static-2-page></static-2-page>
   </div>
 </template>
 
 <script>
-export default {};
+import StaticPage from "../../modules/two-modules/Static-page.vue";
+import Static2Page from "../../modules/two-modules/Static2-page.vue";
+
+export default {
+  components: {
+    Static2Page,
+    StaticPage,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

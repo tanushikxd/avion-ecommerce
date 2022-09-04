@@ -41,6 +41,9 @@
         padding: 17px 0 17px 32px;
         color: white;
     }
+    input::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 1);
+      }
     &-btn{
         width: 118px;
         font-size: 16px;

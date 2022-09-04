@@ -1,0 +1,92 @@
+.offers {
+  margin-bottom: 82px;
+  margin-top: 80px;
+  &-title {
+    margin-bottom: 36px;
+  }
+  &-wrapper {
+    //   background-color: rgba(249, 249, 249, 1);
+    //   width: 305px;
+    //   height: 244px;
+    //   display: flex;
+    //   padding: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+  }
+  &-choice {
+    background-color: rgba(249, 249, 249, 1);
+    width: 305px;
+    height: 244px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 48px;
+    &_icon {
+      margin-bottom: 12px;
+      width: 24px;
+      height: 24px;
+    }
+    &_title {
+      margin-bottom: 12px;
+      text-align: left;
+    }
+    &_text {
+      text-align: left;
+    }
+  }
+}
+.benefits {
+  margin-top: 60px;
+  background-image: url(../../assets/images/Email\ sign-up.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 444px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &-title {
+    margin-bottom: 12px;
+    color: white;
+  }
+  &-text {
+    margin-bottom: 30px;
+    color: white;
+    padding: 0 473px 0 473px;
+  }
+  &-icons {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  &-input {
+    width: 354px;
+    height: 56px;
+    padding: 17px 0 17px 32px;
+  }
+  input::-webkit-input-placeholder {
+    color: rgb(90, 85, 120);
+  }
+  &-btn {
+    width: 118px;
+    padding: 16px 22px;
+    background-color: rgba(42, 37, 75, 1);
+    color: white;
+  }
+}
+.benefits-icons_text {
+  position: relative;
+  color: white;
+}
+.benefits-icons_text::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../assets/icons/check.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  left: -20px;
+  top: 2px;
+}

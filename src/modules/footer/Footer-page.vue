@@ -26,7 +26,7 @@
             >
           </li>
           <li class="footer-item">
-            <router-link to="/footer-menu" class="footer-link"
+            <router-link to="/products" class="footer-link"
               >All products
             </router-link>
           </li>
