@@ -17,7 +17,7 @@
       </div>
     </section>
     <static-page></static-page>
-    <products-component></products-component>
+    <products-page></products-page>
     <section class="explains">
       <div class="container explains-container">
         <div class="explains-info">
@@ -43,7 +43,7 @@
 
 <script>
 import StaticPage from "../two-modules/Static-page.vue";
-import ProductsComponent from "./components/products/Products-component.vue";
+import ProductsPage from "./components/products/Products-page.vue";
 import Static2Page from "../two-modules/Static2-page.vue";
 export default {
   data() {
@@ -59,7 +59,7 @@ export default {
       });
   },
   components: {
-    ProductsComponent,
+    ProductsPage,
     StaticPage,
     Static2Page,
   },

@@ -30,18 +30,19 @@
     </div>
     <div class="products-like">
       <h3 class="products-like_might">You might also like</h3>
-      <products-component></products-component>
+
+      <products-page></products-page>
     </div>
     <static-page></static-page>
   </section>
 </template>
 
 <script>
-import ProductsComponent from "./Products-component.vue";
+import ProductsPage from "./Products-page.vue";
 import StaticPage from "../../../two-modules/Static-page.vue";
 export default {
   components: {
-    ProductsComponent,
+    ProductsPage,
     StaticPage,
   },
   data() {

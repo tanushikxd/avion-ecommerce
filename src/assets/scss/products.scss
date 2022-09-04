@@ -1,5 +1,16 @@
 .products {
   margin-bottom: 84px;
+  &-top{
+    background-image: url("../../../../assets/images/products-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 209px;
+    &_title{
+      color: white;
+      text-align: left;
+      padding: 123px;
+    }
+  }
   &-container {
     display: flex;
     flex-wrap: wrap;
@@ -119,3 +130,4 @@ th {
 td {
   border-right: 1px solid rgba(235, 232, 244, 1);
 }
+

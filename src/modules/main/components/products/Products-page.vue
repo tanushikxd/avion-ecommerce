@@ -1,9 +1,5 @@
 <template>
   <section class="products">
-    <div class="products-top">
-      <h1 class="products-top_title">All products</h1>
-    </div>
-
     <div class="container products-container">
       <div class="products-items">
         <div
