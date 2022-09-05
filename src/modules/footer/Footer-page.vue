@@ -93,8 +93,10 @@
       </nav>
       <div class="input">
         <h4 class="input-title">Join our mailing list</h4>
-        <input type="text" placeholder="your@email.com" class="input-form" />
-        <button class="input-btn">Sign up</button>
+        <div class="input-forms">
+          <input type="text" placeholder="your@email.com" class="input-form" />
+          <button class="input-btn">Sign up</button>
+        </div>
       </div>
     </div>
     <!-- </div> -->

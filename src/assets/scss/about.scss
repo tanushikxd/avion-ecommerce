@@ -41,3 +41,26 @@
     }
   }
 }
+@include md-block() {
+  .about {
+    &-title {
+        padding: 32px 24px;
+        margin-bottom: 0;
+    }
+    &-first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      &_wrapper {
+      }
+      &_text{
+        margin-bottom: 158px;
+      }
+      &_title {
+      }
+      &_img {
+      }
+    }
+  }
+}

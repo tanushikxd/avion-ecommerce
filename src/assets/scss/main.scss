@@ -162,4 +162,62 @@
     width: 768px;
   }
 }
+@include md-block() {
+  .hero {
+    background-size: contain;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+    transform: translateY(60%);
+
+    &-container {
+    }
+    &-wrapper {
+      position: static;
+      transform: translateY(-120%);
+      align-items: center;
+      background-color: transparent;
+    }
+    &-title {
+    }
+    &-text {
+      margin-bottom: 32px;
+    }
+    &-btn {
+    }
+  }
+  .explains {
+    margin-top: 100px;
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    &-info {
+      padding: 74px 85px 0 64px;
+      text-align: left;
+      max-width: 971px;
+      background-color: rgba(42, 37, 75, 1);
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-title {
+      margin-bottom: 42px;
+    }
+    &-text {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 155px;
+    }
+    &-btn {
+      margin-bottom: 55px;
+    }
+  }
+  .explains-info_img {
+    width: 971px;
+  }
+}
+
 
