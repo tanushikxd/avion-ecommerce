@@ -11,6 +11,7 @@ import Admin from "./modules/admin/Admin-page.vue";
 import FooterMenu from "./modules/footer/Menu-page.vue";
 import FooterCategories from "./modules/footer/Categories-page.vue";
 import OurCompany from "./modules/footer/Our-page.vue";
+import Basket from "./modules/basket/Basket-page.vue";
 
 export default new VueRouter({
   mode: "history",
@@ -54,6 +55,11 @@ export default new VueRouter({
       path: "/our-company",
       name: "our-company",
       component: OurCompany,
+    },
+    {
+      path: "/basket",
+      name: "basket",
+      component: Basket,
     },
   ],
 });

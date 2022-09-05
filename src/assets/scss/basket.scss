@@ -1,0 +1,19 @@
+.basket{
+    background-color: white;
+    padding: 72px 63px 0 63px;
+    &-image{
+        margin-right: 717px;
+    }
+    &-details{
+        margin-right: 292px;
+    }
+    &-items{
+        display: flex;
+        justify-content: center;
+        padding-top: 56px;
+    }
+    img{
+        width: 109px;
+        height: 134px;
+    }
+}

@@ -25,7 +25,9 @@
           </router-link>
         </div>
       </div>
-      <button class="products-btn">View collection</button>
+      <button @click="viewCollection()" class="products-btn">
+        View collection
+      </button>
     </div>
   </section>
 </template>
@@ -35,10 +37,16 @@ export default {
   data() {
     return {
       products: "",
-      // limitValue: 4,
+      limitValue: 4,
     };
   },
+  computed: {
+    getProducts() {
+      return this.$store.getters.getProducts;
+    },
+  },
   created() {
+    this.$store.dispatch("getProducts", this.limitValue);
     fetch(`http://localhost:3000/products?limit=/${this.limitValue}`)
       .then((res) => res.json())
       .then((json) => {
@@ -52,14 +60,16 @@ export default {
       }).then((res) => console.log(res));
     },
   },
-  // viewCollection() {
-  //   this.limit += 4;
-  //   fetch(`http://localhost:3000/products?limit=/${this.limitValue}`)
-  //     .then((res) => res.json())
-  //     .then((json) => {
-  //       this.products = json;
-  //     });
-  // },
+  viewCollection() {
+    this.$store.dispatch("getProducts", this.limitValue);
+
+    this.limitValue += 4;
+    fetch(`http://localhost:3000/products?limit=/${this.limitValue}`)
+      .then((res) => res.json())
+      .then((json) => {
+        this.products = json;
+      });
+  },
 };
 </script>
 

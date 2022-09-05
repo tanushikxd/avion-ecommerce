@@ -23,9 +23,21 @@
         </table>
         <div class="product-quantity">
           <p class="product-quantity_title">Quantity</p>
-          <input placeholder="0" class="product-quantity_input" type="number" />
+          <input
+            v-model="itemsCount"
+            placeholder="0"
+            class="product-quantity_input"
+            type="number"
+          />
         </div>
-        <button class="product-btn">Add to cart</button>
+        <div class="product-info_btns">
+          <button @click="addToCart(products)" class="product-btn">
+            Add to cart
+          </button>
+          <router-link to="/basket">
+            <button>Go to cart</button>
+          </router-link>
+        </div>
       </div>
     </div>
     <div class="products-like">
@@ -49,7 +61,17 @@ export default {
     return {
       products: "",
       productsId: this.$route.params,
+      data: [],
+      itemsCount: "",
     };
+  },
+  computed: {
+    getProducts() {
+      return this.$store.getters.getProducts;
+    },
+    getBasket() {
+      return this.$store.getters.getBasket;
+    },
   },
   created() {
     fetch(`http://localhost:3000/products/${this.productsId.id}`)
@@ -57,6 +79,12 @@ export default {
       .then((json) => {
         this.products = json;
       });
+  },
+
+  methods: {
+    addToCart(item) {
+      this.getBasket.push(item);
+    },
   },
 };
 </script>

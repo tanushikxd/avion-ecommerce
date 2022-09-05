@@ -6,6 +6,10 @@
           <router-link to="/">
             <img src="../../assets/icons/Logo.svg" alt="" />
           </router-link>
+          <router-link class="header-logo_basket" to="/basket">
+            {{ getBasket }}
+            <img src="../../assets/icons/Shopping--cart.svg" alt="" />
+          </router-link>
         </div>
         <nav class="nav">
           <ul class="nav-menu">
@@ -32,7 +36,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    getBasket() {
+      return this.$store.getters.getBasket.length;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

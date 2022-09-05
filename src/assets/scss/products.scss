@@ -261,6 +261,10 @@ td {
       padding: 70px;
       justify-content: center;
       margin-top: 31px;
+      &_btns{
+        display: flex;
+        justify-content: space-between;
+      }
     }
     &-title {
       margin-bottom: 16px;
