@@ -11,8 +11,14 @@
         <p class="benefits-icons_text">Free events</p>
         <p class="benefits-icons_text">Large discounts</p>
       </div>
-      <input type="text" placeholder="your@email.com" class="benefits-input" />
-      <button class="benefits-btn">Sign up</button>
+      <div class="benefits-form">
+        <input
+          type="text"
+          placeholder="your@email.com"
+          class="benefits-input"
+        />
+        <button class="benefits-btn">Sign up</button>
+      </div>
     </div>
   </div>
 </template>

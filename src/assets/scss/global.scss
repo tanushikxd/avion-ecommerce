@@ -1,4 +1,4 @@
-@import "./vars.scss";
+// @import "./vars.scss";
 * {
   margin: 0;
   padding: 0;
@@ -22,30 +22,30 @@ body {
     cursor: pointer;
     animation: fadeIn 1s ease-in;
   }
-  .moveInUp-enter-active{
+  .moveInUp-enter-active {
     animation: fadeIn 1s ease-in;
   }
-  @keyframes fadeIn{
-    0%{
+  @keyframes fadeIn {
+    0% {
       opacity: 0;
     }
-    50%{
+    50% {
       opacity: 0.5;
     }
-    100%{
+    100% {
       opacity: 1;
     }
   }
-  .moveInUp-leave-active{
-    animation: moveInUp .3s ease-in;
+  .moveInUp-leave-active {
+    animation: moveInUp 0.3s ease-in;
   }
-  @keyframes moveInUp{
-   0%{
-    transform: translateY(0);
-   }
-    100%{
-    transform: translateY(-400px);
-   }
+  @keyframes moveInUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-400px);
+    }
   }
 }
 
@@ -79,10 +79,10 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: #4E4D93;
+  background-color: #4e4d93;
   color: white;
 }
-h1{
+h1 {
   font-family: "Clash Display" sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -106,4 +106,14 @@ h4 {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+}
+@mixin sm-block() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin md-block() {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
 }

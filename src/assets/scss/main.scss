@@ -1,3 +1,4 @@
+@import "./vars.scss";
 .hero {
   background-image: url("../../assets/images/Hero\ Blocks.jpg");
   background-repeat: no-repeat;
@@ -34,51 +35,8 @@
     line-height: 27px;
     color: rgb(110, 103, 157);
   }
-  &-btn{
+  &-btn {
     transform: translateX(-100%);
-  }
-}
-.products {
-  margin-bottom: 84px;
-  &-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &-items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-  &-item {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    &_title {
-      margin-bottom: 8px;
-    }
-    &_btn {
-      background-color: transparent;
-      transform: translateX(85%);
-    }
-    &_btn:hover,
-    &_btn:focus {
-      color: rgb(237, 14, 14);
-    }
-    &_price {
-      font-family: "Satoshi" sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      margin-bottom: 28px;
-    }
-    img {
-      max-width: 100%;
-      height: 375px;
-      margin-bottom: 24px;
-    }
   }
 }
 
@@ -120,29 +78,88 @@
 //   }
 // }
 
-.explains{
+.explains {
   margin-top: 100px;
-  &-container{
+  &-container {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
   }
-  &-info{
+  &-info {
     padding: 64px 75px 0 64px;
     text-align: left;
     max-width: 634px;
     background-color: rgba(42, 37, 75, 1);
     color: white;
   }
-  &-title{
+  &-title {
     margin-bottom: 12px;
   }
-  &-text{
+  &-text {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 205px;
   }
-  &-btn{
+  &-btn {
     margin-bottom: 35px;
   }
 }
+
+@include sm-block() {
+  .hero {
+    background-size: contain;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+    transform: translateY(60%);
+
+    &-container {
+    }
+    &-wrapper {
+      position: static;
+      transform: translateY(-120%);
+      align-items: center;
+      background-color: transparent;
+    }
+    &-title {
+    }
+    &-text {
+      margin-bottom: 32px;
+    }
+    &-btn {
+    }
+  }
+  .explains {
+    margin-top: 100px;
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    &-info {
+      padding: 74px 85px 0 64px;
+      text-align: left;
+      max-width: 768px;
+      background-color: rgba(42, 37, 75, 1);
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-title {
+      margin-bottom: 42px;
+    }
+    &-text {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 155px;
+    }
+    &-btn {
+      margin-bottom: 55px;
+    }
+  }
+  .explains-info_img {
+    width: 768px;
+  }
+}
+

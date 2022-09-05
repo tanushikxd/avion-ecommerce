@@ -1,19 +1,43 @@
+@import "../scss/vars.scss";
 .about {
-    &-title{
-        margin-bottom: 79px;
-        padding: 0 369px 0 369px;
-    }
+  &-title {
+    margin-bottom: 79px;
+    padding: 0 369px 0 369px;
+  }
   &-first {
     display: flex;
     text-align: left;
-    &_wrapper{
-        padding: 72px 100px 0 84px;
+    &_wrapper {
+      padding: 72px 100px 0 84px;
     }
-    &_title{
-        margin-bottom: 25px;
+    &_title {
+      margin-bottom: 25px;
     }
-    &_img{
-        width: 710px;
+    &_img {
+      width: 710px;
+    }
+  }
+}
+@include sm-block() {
+  .about {
+    &-title {
+        padding: 32px 24px;
+        margin-bottom: 0;
+    }
+    &-first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      &_wrapper {
+      }
+      &_text{
+        margin-bottom: 158px;
+      }
+      &_title {
+      }
+      &_img {
+      }
     }
   }
 }
