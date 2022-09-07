@@ -20,9 +20,14 @@ body {
     text-decoration: none;
   }
   router-link {
-    cursor: pointer;
-    animation: fadeIn 1s ease-in;
+    
   }
+  a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    animation: fadeIn 0.1s ease-in;
+  }
+  
   .moveInUp-enter-active {
     animation: fadeIn 1s ease-in;
   }

@@ -6,7 +6,6 @@
           class="basket-item"
           v-for="(item, index) in getBasket"
           :key="index"
-          :basket_item_data="item"
         >
           <button @click="remove(index)">Remove</button>
           <div class="backet-item_img">
@@ -18,11 +17,11 @@
 
           <div class="basket-item_qty">
             <p>Quantity</p>
-            <span>
-              <!-- <span @click="decr">-</span> -->
+            <div basket-item_btns>
+              <button @click="decrement(index)" class="qty-btn btn-1">-</button>
               {{ item.qty }}
-              <!-- <span @click="incr">+</span> -->
-            </span>
+              <button @click="increment(index)" class="qty-btn">+</button>
+            </div>
           </div>
         </div>
         <div class="basket-total">
@@ -41,14 +40,6 @@ export default {
     return {
       products: "",
     };
-  },
-  props: {
-    basket_item_data: {
-      type: Object,
-      default() {
-        return {};
-      },
-    },
   },
   computed: {
     getBasket() {
@@ -103,6 +94,14 @@ export default {
     },
     remove(index) {
       this.getBasket.splice(index, 1);
+    },
+    increment(index) {
+      this.getBasket[index].qty++;
+    },
+    decrement(index) {
+      if (this.getBasket[index].qty > 1) {
+        this.getBasket[index].qty--;
+      }
     },
   },
 };

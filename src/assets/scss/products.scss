@@ -71,6 +71,17 @@
     justify-content: center;
     margin-top: 31px;
   }
+  &-goBtn {
+    background-color: transparent;
+  }
+  &-goBtn:hover{
+    color: red;
+    transform: scale(1.1);
+  }
+  &-goBtn:active{
+    color: blue;
+  }
+
   &-title {
     margin-bottom: 16px;
   }
@@ -223,7 +234,6 @@ td {
       border-right: 1px solid rgba(235, 232, 244, 1);
     }
   }
-  
 }
 @include md-block() {
   .products {
@@ -261,7 +271,7 @@ td {
       padding: 70px;
       justify-content: center;
       margin-top: 31px;
-      &_btns{
+      &_btns {
         display: flex;
         justify-content: space-between;
       }
@@ -322,6 +332,4 @@ td {
       border-right: 1px solid rgba(235, 232, 244, 1);
     }
   }
-  
 }
-

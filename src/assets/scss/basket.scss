@@ -18,6 +18,7 @@
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
     &_btn {
       color: red;
     }
@@ -33,6 +34,17 @@
     }
   }
 }
+.qty-btn{
+  background-color: transparent;
+  font-size: 20px;
+}
+.qty-btn:hover{
+  color: green;
+}
+.btn-1:hover{
+  color: red;
+}
+
 
 img {
   max-width: 109px;

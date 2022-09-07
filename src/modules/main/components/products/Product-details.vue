@@ -27,7 +27,7 @@
             Add to cart
           </button>
           <router-link to="/basket">
-            <button>Go to cart</button>
+            <button class="product-goBtn">Go to cart</button>
           </router-link>
         </div>
       </div>
