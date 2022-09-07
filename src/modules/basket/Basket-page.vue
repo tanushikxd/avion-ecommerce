@@ -7,7 +7,7 @@
           v-for="(item, index) in getBasket"
           :key="index"
         >
-          <button @click="remove(index)">Remove</button>
+          <button class="btn-remove" @click="remove(index)">Remove</button>
           <div class="backet-item_img">
             <img :src="item.image" alt="" />
 
@@ -16,11 +16,11 @@
           </div>
 
           <div class="basket-item_qty">
-            <p>Quantity</p>
+            <p class="qty-title">Quantity</p>
             <div basket-item_btns>
-              <button @click="decrement(index)" class="qty-btn btn-1">-</button>
-              {{ item.qty }}
               <button @click="increment(index)" class="qty-btn">+</button>
+              {{ item.qty }}
+              <button @click="decrement(index)" class="qty-btn btn-1">-</button>
             </div>
           </div>
         </div>

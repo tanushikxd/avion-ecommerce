@@ -1,7 +1,10 @@
+@import "./vars.scss";
+
 .basket {
   width: 1280px;
   background-color: white;
   margin-left: 80px;
+
   &-total {
     margin-bottom: 50px;
     width: 1280px;
@@ -34,18 +37,73 @@
     }
   }
 }
-.qty-btn{
+.qty-btn {
   background-color: transparent;
   font-size: 20px;
 }
-.qty-btn:hover{
+.qty-btn:hover {
   color: green;
 }
-.btn-1:hover{
+.btn-1:hover {
   color: red;
 }
 
-
 img {
   max-width: 109px;
+}
+@include sm-block() {
+  .basket {
+    max-width: 768px;
+    margin: 0;
+    padding: 32px;
+    &-item {
+      display: flex;
+      &_qty {
+        margin: 40px 120px 0 20px;
+        margin-left: 80px;
+      }
+    }
+    &-total {
+      width: 668px;
+      padding: 30px;
+    }
+  }
+  .qty-btn {
+    display: none;
+  }
+  .btn-remove {
+    margin-top: 25px;
+    background-color: transparent;
+  }
+  .btn-remove:hover {
+    color: red;
+  }
+}
+@include md-block() {
+  .basket {
+    max-width: 991px;
+    margin: 0;
+    &-item {
+      display: flex;
+      &_qty {
+        margin: 40px 120px 0 20px;
+        margin-left: 300px;
+      }
+    }
+    &-total {
+      width: 981px;
+      margin: 0;
+    }
+  }
+  .qty-btn {
+    display: none;
+  }
+  .btn-remove {
+    margin-top: 25px;
+    margin-right: 150px;
+    background-color: transparent;
+  }
+  .btn-remove:hover {
+    color: red;
+  }
 }
