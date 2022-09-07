@@ -19,5 +19,12 @@
     display: flex;
     justify-content: space-between;
     padding: 30px 30px 0 48%;
+    &_basket{
+      color: red;
+      font-size: 12px;
+    }
+    &_img{
+      width: 24px;
+    }
   }
   

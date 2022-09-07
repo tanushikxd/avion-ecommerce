@@ -8,7 +8,11 @@
           </router-link>
           <router-link class="header-logo_basket" to="/basket">
             {{ getBasket }}
-            <img src="../../assets/icons/Shopping--cart.svg" alt="" />
+            <img
+              class="header-logo_img"
+              src="../../assets/icons/Shopping--cart.svg"
+              alt=""
+            />
           </router-link>
         </div>
         <nav class="nav">
@@ -37,6 +41,15 @@
 
 <script>
 export default {
+  props: {
+    basket_data: {
+      type: Array,
+      default() {
+        return [];
+      },
+    },
+  },
+
   computed: {
     getBasket() {
       return this.$store.getters.getBasket.length;

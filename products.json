@@ -8,7 +8,8 @@
       "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
       "height": "110cm",
       "width": "75cm",
-      "depth": "50cm"
+      "depth": "50cm",
+      "qty": "1"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
       "height": "110cm",
       "width": "75cm",
-      "depth": "50cm"
+      "depth": "50cm",
+      "qty": "1"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
       "height": "110cm",
       "width": "75cm",
-      "depth": "50cm"
+      "depth": "50cm",
+      "qty": "1"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
       "height": "110cm",
       "width": "75cm",
-      "depth": "50cm"
+      "depth": "50cm",
+      "qty": "1"
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
       "height": "110cm",
       "width": "75cm",
-      "depth": "50cm"
+      "depth": "50cm",
+      "qty": "1"
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
       "height": "110cm",
       "width": "75cm",
-      "depth": "50cm"
+      "depth": "50cm",
+      "qty": "1"
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
       "height": "110cm",
       "width": "75cm",
-      "depth": "50cm"
+      "depth": "50cm",
+      "qty": "1"
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
       "height": "110cm",
       "width": "75cm",
-      "depth": "50cm"
+      "depth": "50cm",
+      "qty": "1"
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
       "height": "110cm",
       "width": "75cm",
-      "depth": "50cm"
+      "depth": "50cm",
+      "qty": "1"
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
       "height": "110cm",
       "width": "75cm",
-      "depth": "50cm"
+      "depth": "50cm",
+      "qty": "1"
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
       "height": "110cm",
       "width": "75cm",
-      "depth": "50cm"
+      "depth": "50cm",
+      "qty": "1"
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
       "height": "110cm",
       "width": "75cm",
-      "depth": "50cm"
+      "depth": "50cm",
+      "qty": "1"
     },
     {
       "image": "https://www.easyequipment.com/pub/media/catalog/product/cache/af4a4b5ad9ea3d4e7e8fbeb558b2c55f/b/1/b1952-2.jpg",
@@ -128,6 +140,7 @@
       "height": "75",
       "width": "59",
       "depth": "56",
+      "qty": "1",
       "id": 13
     },
     {
@@ -138,6 +151,7 @@
       "height": "71",
       "width": "70",
       "depth": "70",
+      "qty": "1",
       "id": 14
     },
     {
@@ -148,6 +162,7 @@
       "height": "81",
       "width": "49",
       "depth": "50",
+      "qty": "1",
       "id": 15
     }
   ]

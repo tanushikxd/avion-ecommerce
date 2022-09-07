@@ -7,13 +7,12 @@ const store = new Vuex.Store({
   state: {
     products: "",
     basket: [],
-    count: 0,
   },
   mutations: {
     SET_PRODUCTS(state, products) {
       state.products = products;
     },
-    SET_BASKET(state, basket) {
+    SET_BASKET: (state, basket) => {
       state.basket = basket;
     },
   },

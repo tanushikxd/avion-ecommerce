@@ -21,15 +21,7 @@
             <td>{{ products.depth }}</td>
           </tr>
         </table>
-        <div class="product-quantity">
-          <p class="product-quantity_title">Quantity</p>
-          <input
-            v-model="itemsCount"
-            placeholder="0"
-            class="product-quantity_input"
-            type="number"
-          />
-        </div>
+
         <div class="product-info_btns">
           <button @click="addToCart(products)" class="product-btn">
             Add to cart
@@ -52,6 +44,7 @@
 <script>
 import ProductsPage from "./Products-page.vue";
 import StaticPage from "../../../two-modules/Static-page.vue";
+
 export default {
   components: {
     ProductsPage,
@@ -61,8 +54,6 @@ export default {
     return {
       products: "",
       productsId: this.$route.params,
-      data: [],
-      itemsCount: "",
     };
   },
   computed: {
@@ -73,6 +64,7 @@ export default {
       return this.$store.getters.getBasket;
     },
   },
+
   created() {
     fetch(`http://localhost:3000/products/${this.productsId.id}`)
       .then((res) => res.json())
@@ -80,10 +72,26 @@ export default {
         this.products = json;
       });
   },
+  mounted() {
+    this.$set(this.getBasket, "qty", 0);
+  },
 
   methods: {
-    addToCart(item) {
-      this.getBasket.push(item);
+    addToCart(product) {
+      if (this.getBasket.length) {
+        let isProductExist = false;
+        this.getBasket.map(function (item) {
+          if (item.id === product.id) {
+            isProductExist = true;
+            item.qty++;
+          }
+        });
+        if (!isProductExist) {
+          this.getBasket.push(product);
+        }
+      } else {
+        this.getBasket.push(product);
+      }
     },
   },
 };
