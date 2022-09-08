@@ -92,8 +92,9 @@
         </ul>
       </nav>
       <div class="input">
-        <h4 class="input-title">Join our mailing list</h4>
         <div class="input-forms">
+          <h4 class="input-title">Join our mailing list</h4>
+
           <input type="text" placeholder="your@email.com" class="input-form" />
           <button class="input-btn">Sign up</button>
         </div>

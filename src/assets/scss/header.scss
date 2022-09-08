@@ -19,12 +19,22 @@
     display: flex;
     justify-content: space-between;
     padding: 30px 30px 0 48%;
+    &_title{
+      font-size: 24px;
+      font-weight: 400;
+      color: rgba(34, 32, 46, 1);
+      font-family: 'Clash Display' sans-serif;
+      line-height: 29px;
+    }
     &_basket{
       color: red;
       font-size: 12px;
     }
     &_img{
-      width: 24px;
+      background-image: url(../../assets//icons//Shopping--cart.svg);
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
     }
   }
   

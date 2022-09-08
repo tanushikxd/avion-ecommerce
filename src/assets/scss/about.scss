@@ -14,24 +14,35 @@
       margin-bottom: 25px;
     }
     &_img {
-      width: 710px;
+      background-image: url(../../assets/images/about1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 603px;
+    }
+    &_img-2 {
+      background-image: url(../../assets/images/about2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 603px;
     }
   }
 }
 @include sm-block() {
   .about {
     &-title {
-        padding: 32px 24px;
-        margin-bottom: 0;
+      padding: 32px 24px;
+      margin-bottom: 0;
     }
     &-first {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       &_wrapper {
       }
-      &_text{
+      &_text {
         margin-bottom: 158px;
       }
       &_title {
@@ -44,17 +55,17 @@
 @include md-block() {
   .about {
     &-title {
-        padding: 32px 24px;
-        margin-bottom: 0;
+      padding: 32px 24px;
+      margin-bottom: 0;
     }
     &-first {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       &_wrapper {
       }
-      &_text{
+      &_text {
         margin-bottom: 158px;
       }
       &_title {

@@ -60,44 +60,40 @@
 }
 
 @include sm-block() {
-    .footer{
-        padding-bottom: 26px;
+  .footer {
+    &-nav {
     }
+  }
+  .input {
+    &-title {
+      padding-left: 30px;
+    }
+    &-forms {
+    }
+    &-form {
+      max-width: 400px;
+    }
+  }
+}
+@include md-block() {
+  .footer {
+    padding-bottom: 40px;
+    &-nav {
+      margin-bottom: 30px;
+    }
+    position: relative;
+  }
   .input {
     position: static;
     display: inline;
-
+    &-forms {
+    }
+    &-form {
+      width: 500px;
+    }
 
     &-title {
       padding-left: 30px;
     }
   }
-}
-@include md-block() {
-  .footer{
-      padding-bottom: 40px;
-      &-nav{
-        margin-bottom: 30px;
-      }
-  }
-.input {
-  position: static;
-  display: inline;
-  &-forms{
-    transform: translateX(-13%);
-  }
-  &-form{
-    width: 500px;
-    
-  }
-  &-title{
-    margin-right: 50px;
-  }
-
-
-
-  &-title {
-    padding-left: 30px;
-  }
-}
 }

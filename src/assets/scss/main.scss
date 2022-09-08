@@ -91,6 +91,13 @@
     max-width: 634px;
     background-color: rgba(42, 37, 75, 1);
     color: white;
+    &_pic {
+      background-image: url(../../assets/images/explains.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 630px;
+      height: 478px;
+    }
   }
   &-title {
     margin-bottom: 12px;
@@ -158,7 +165,7 @@
       margin-bottom: 55px;
     }
   }
-  .explains-info_img {
+  .explains-info_pic {
     width: 768px;
   }
 }
@@ -202,6 +209,9 @@
       color: white;
       display: flex;
       flex-wrap: wrap;
+      &_pic{
+        width: 991px;
+      }
     }
     &-title {
       margin-bottom: 42px;
@@ -219,5 +229,3 @@
     width: 971px;
   }
 }
-
-

@@ -4,15 +4,11 @@
       <div class="header-wrapper">
         <div class="header-logo">
           <router-link to="/">
-            <img src="../../assets/icons/Logo.svg" alt="" />
+            <h1 class="header-logo_title">Avion</h1>
           </router-link>
           <router-link class="header-logo_basket" to="/basket">
             {{ getBasket }}
-            <img
-              class="header-logo_img"
-              src="../../assets/icons/Shopping--cart.svg"
-              alt=""
-            />
+            <div class="header-logo_img"></div>
           </router-link>
         </div>
         <nav class="nav">

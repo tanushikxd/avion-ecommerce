@@ -18,6 +18,7 @@
     </section>
     <static-page></static-page>
     <products-page></products-page>
+
     <section class="explains">
       <div class="container explains-container">
         <div class="explains-info">
@@ -28,13 +29,7 @@
           </p>
           <button class="explains-btn">View collection</button>
         </div>
-        <div class="explains-info_pic">
-          <img
-            src="../../assets/images/explains.jpg"
-            alt=""
-            class="explains-info_img"
-          />
-        </div>
+        <div class="explains-info_pic"></div>
       </div>
     </section>
     <static-2-page></static-2-page>

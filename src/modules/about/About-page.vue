@@ -17,18 +17,10 @@
           the London interior design community.
         </p>
       </div>
-      <img
-        src="../../assets/images/about1.jpg"
-        alt=""
-        class="about-first_img"
-      />
+      <div class="about-first_img-2"></div>
     </div>
     <div class="about-first">
-      <img
-        src="../../assets/images/about2.jpg"
-        alt=""
-        class="about-first_img"
-      />
+      <div class="about-first_img"></div>
       <div class="about-first_wrapper">
         <h3 class="about-first_title">
           Our service isn’t just personal, it’s actually hyper personally
