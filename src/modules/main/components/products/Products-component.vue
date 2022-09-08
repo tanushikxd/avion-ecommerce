@@ -38,6 +38,7 @@ export default {
     return {
       products: "",
       limitValue: 4,
+      productsId: this.$route.params,
     };
   },
   computed: {

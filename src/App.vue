@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <header-component></header-component>
-    <!-- <router-view></router-view> -->
-    <transition name="moveInUp">
+    <router-view :key="$route.fullPath"></router-view>
+    <!-- <transition name="moveInUp">
       <router-view />
-    </transition>
+    </transition> -->
     <footer-page></footer-page>
   </div>
 </template>

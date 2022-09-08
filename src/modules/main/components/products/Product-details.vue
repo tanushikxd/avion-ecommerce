@@ -32,6 +32,7 @@
         </div>
       </div>
     </div>
+
     <div class="products-like">
       <h3 class="products-like_might">You might also like</h3>
 
@@ -44,11 +45,12 @@
 <script>
 import ProductsPage from "./Products-page.vue";
 import StaticPage from "../../../two-modules/Static-page.vue";
-
+// import ProductsComponent from "../products/Products-component.vue";
 export default {
   components: {
     ProductsPage,
     StaticPage,
+    // ProductsComponent,
   },
   data() {
     return {

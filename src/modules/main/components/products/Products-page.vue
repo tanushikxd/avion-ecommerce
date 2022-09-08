@@ -31,9 +31,16 @@ export default {
   data() {
     return {
       products: "",
+      productsId: this.$route.params,
       // limitValue: 4,
     };
   },
+  computed: {
+    getProducts() {
+      return this.$store.getters.getProducts;
+    },
+  },
+
   created() {
     fetch(`http://localhost:3000/products?limit=/${this.limitValue}`)
       .then((res) => res.json())
@@ -48,14 +55,6 @@ export default {
       }).then((res) => console.log(res));
     },
   },
-  // viewCollection() {
-  //   this.limit += 4;
-  //   fetch(`http://localhost:3000/products?limit=/${this.limitValue}`)
-  //     .then((res) => res.json())
-  //     .then((json) => {
-  //       this.products = json;
-  //     });
-  // },
 };
 </script>
 
